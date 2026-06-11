@@ -1,0 +1,56 @@
+{
+  "name": "kaicalls",
+  "version": "0.1.0",
+  "description": "Official KaiCalls SDK — give your AI agent a phone. Outbound calls, agents, leads, SMS, transcripts, and webhooks.",
+  "keywords": [
+    "kaicalls",
+    "voice",
+    "ai",
+    "phone",
+    "calls",
+    "sms",
+    "vapi",
+    "receptionist"
+  ],
+  "homepage": "https://www.kaicalls.com/docs/api",
+  "bugs": {
+    "email": "support@kaicalls.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgallic/kai_calls.git",
+    "directory": "sdk/typescript"
+  },
+  "license": "MIT",
+  "author": "KaiCalls <support@kaicalls.com>",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
