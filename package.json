@@ -40,7 +40,7 @@
   ],
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --clean",
-    "test": "npm run build && node --test test",
+    "test": "npm run build && node --test test/*.test.mjs",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
