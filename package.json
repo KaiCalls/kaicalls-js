@@ -18,8 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cgallic/kai_calls.git",
-    "directory": "sdk/typescript"
+    "url": "git+https://github.com/KaiCalls/kaicalls-js.git"
   },
   "license": "MIT",
   "author": "KaiCalls <support@kaicalls.com>",
@@ -40,7 +39,7 @@
   ],
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --clean",
-    "test": "npm run build && node --test test/*.test.mjs",
+    "test": "npm run build && node --test test/sdk.test.mjs",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {

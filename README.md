@@ -5,6 +5,7 @@ Official JavaScript/TypeScript SDK for the [KaiCalls](https://www.kaicalls.com) 
 - Zero dependencies (uses native `fetch`, Node 18+)
 - Full TypeScript types, ESM + CJS
 - Docs: <https://www.kaicalls.com/docs/api> · Live OpenAPI: `GET /api/v1/openapi.json`
+- Source: <https://github.com/KaiCalls/kaicalls-js>
 
 ## Install
 
